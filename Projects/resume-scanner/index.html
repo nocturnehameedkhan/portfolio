@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>AI Resume Scanner</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="scanner-app">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <div class="app-header">
+      <h1>📋 AI Resume Scanner</h1>
+      <p>Paste a job description and your resume. Get an instant match score!</p>
+    </div>
+    <div class="two-col">
+      <div class="input-panel">
+        <label>📄 Job Description</label>
+        <textarea id="jobDesc" placeholder="Paste the job description here...&#10;&#10;Example:&#10;We need a React developer with JavaScript, Node.js, CSS experience. Must know Git and REST APIs..."></textarea>
+      </div>
+      <div class="input-panel">
+        <label>👤 Your Resume / Skills</label>
+        <textarea id="resumeText" placeholder="Paste your resume text or list your skills here...&#10;&#10;Example:&#10;JavaScript, React, HTML, CSS, Node.js, Git, MongoDB, REST APIs..."></textarea>
+      </div>
+    </div>
+    <button class="scan-btn" onclick="scanResume()">🔍 Analyze Match</button>
+    <div id="results" class="results hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

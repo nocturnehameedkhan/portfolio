@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="weather-app">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>⛅ Weather App</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="error" class="error hidden">City not found. Try again.</div>
+    <div id="weatherCard" class="weather-card hidden">
+      <div class="city-name" id="cityName">--</div>
+      <div class="weather-icon" id="weatherIcon">☁️</div>
+      <div class="temp" id="temp">--°C</div>
+      <div class="description" id="description">--</div>
+      <div class="details">
+        <div class="detail"><span>💧 Humidity</span><strong id="humidity">--%</strong></div>
+        <div class="detail"><span>💨 Wind</span><strong id="wind">-- km/h</strong></div>
+        <div class="detail"><span>👁 Visibility</span><strong id="visibility">-- km</strong></div>
+        <div class="detail"><span>🌡 Feels Like</span><strong id="feelsLike">--°C</strong></div>
+      </div>
+    </div>
+    <p class="api-note">Uses OpenWeatherMap free API. Get your key at <a href="https://openweathermap.org/api" target="_blank">openweathermap.org</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

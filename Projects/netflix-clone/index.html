@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="netflix-nav">
+    <div class="netflix-logo">NETFLIX</div>
+    <div class="nav-links">
+      <a href="#">Home</a><a href="#">TV Shows</a><a href="#">Movies</a><a href="#">My List</a>
+    </div>
+    <div class="nav-right">
+      <a href="../../index.html" class="portfolio-link">← Portfolio</a>
+      <span class="nav-icon">🔔</span>
+      <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><rect width='32' height='32' rx='4' fill='%23e50914'/><text y='22' x='8' font-size='16'>N</text></svg>" alt="Profile" class="profile-img"/>
+    </div>
+  </nav>
+
+  <div class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🏆 #1 in Shows Today</div>
+      <h1>Stranger Things</h1>
+      <p>When a young boy disappears, his mother and friends uncover a government conspiracy involving secret experiments and a terrifying supernatural force.</p>
+      <div class="hero-buttons">
+        <button class="play-btn" onclick="alert('Playing... (UI Only Demo)')">▶ Play</button>
+        <button class="info-btn">ℹ More Info</button>
+      </div>
+      <div class="hero-rating">
+        <span class="rating-badge">TV-14</span>
+        <span>2016 • 4 Seasons</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-rows">
+    <div class="row" id="trending"></div>
+    <div class="row" id="action"></div>
+    <div class="row" id="comedy"></div>
+    <div class="row" id="documentary"></div>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-hero" id="modalHero"></div>
+      <div class="modal-info">
+        <div class="modal-buttons">
+          <button class="play-btn">▶ Play</button>
+          <button class="circle-btn">+</button>
+          <button class="circle-btn">👍</button>
+        </div>
+        <div class="modal-meta" id="modalMeta"></div>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

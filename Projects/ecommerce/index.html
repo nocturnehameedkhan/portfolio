@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>E-commerce Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="shop-header">
+    <div class="shop-brand">🛍️ ShopZone</div>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 Cart <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </header>
+  <div class="shop-layout">
+    <main class="products-section">
+      <a href="../../index.html" class="back-link">← Portfolio</a>
+      <h2>Featured Products</h2>
+      <div class="products-grid" id="productsGrid"></div>
+    </main>
+    <aside class="cart-panel" id="cartPanel">
+      <h3>Your Cart</h3>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+        <button class="checkout-btn" onclick="checkout()">Checkout →</button>
+      </div>
+    </aside>
+  </div>
+  <div id="checkoutModal" class="modal hidden">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h2>Order Placed!</h2>
+      <p>Thank you for your purchase. Your items will arrive in 3-5 days.</p>
+      <button onclick="closeModal()" class="btn">Continue Shopping</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

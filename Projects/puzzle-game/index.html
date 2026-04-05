@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Sliding Puzzle</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="puzzle-app">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>🧩 15-Tile Sliding Puzzle</h1>
+    <div class="stats">
+      <span>Moves: <strong id="moves">0</strong></span>
+      <span>Time: <strong id="time">00:00</strong></span>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="controls">
+      <button onclick="shuffleBoard()">🔀 Shuffle</button>
+      <button onclick="solveHint()">💡 Hint</button>
+    </div>
+    <div id="winMessage" class="win-message hidden">🎉 Puzzle Solved! <button onclick="shuffleBoard()">Play Again</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

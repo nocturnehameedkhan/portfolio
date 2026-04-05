@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="game-app">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>❌⭕ Tic Tac Toe</h1>
+    <div class="score-board">
+      <div class="score-item x-score"><span>Player X</span><strong id="scoreX">0</strong></div>
+      <div class="score-item draw"><span>Draws</span><strong id="scoreDraw">0</strong></div>
+      <div class="score-item o-score"><span>Player O</span><strong id="scoreO">0</strong></div>
+    </div>
+    <div class="status" id="status">Player X's turn</div>
+    <div class="board" id="board"></div>
+    <div class="controls">
+      <button onclick="resetGame()">New Game</button>
+      <button onclick="resetScores()">Reset Scores</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

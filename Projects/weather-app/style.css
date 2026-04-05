@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; min-height: 100vh; background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); display: flex; align-items: center; justify-content: center; color: white; }
+.weather-app { text-align: center; padding: 2.5rem; max-width: 480px; width: 90%; }
+.back-link { display: inline-block; color: rgba(255,255,255,0.7); text-decoration: none; margin-bottom: 1.5rem; font-size: 0.9rem; }
+.back-link:hover { color: white; }
+h1 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+.search-box { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.search-box input { flex: 1; padding: 0.75rem 1rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white; font-size: 1rem; }
+.search-box input::placeholder { color: rgba(255,255,255,0.5); }
+.search-box input:focus { outline: none; border-color: rgba(255,255,255,0.5); }
+.search-box button { padding: 0.75rem 1.25rem; background: #6c63ff; border: none; border-radius: 10px; color: white; font-size: 0.95rem; font-weight: 600; cursor: pointer; }
+.error { color: #ff6b6b; background: rgba(255,107,107,0.15); padding: 0.75rem; border-radius: 8px; margin-bottom: 1rem; }
+.hidden { display: none !important; }
+.weather-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 2rem; }
+.city-name { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+.weather-icon { font-size: 4rem; margin: 1rem 0; }
+.temp { font-size: 3.5rem; font-weight: 700; }
+.description { font-size: 1rem; color: rgba(255,255,255,0.8); text-transform: capitalize; margin-bottom: 1.5rem; }
+.details { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.detail { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 0.75rem; }
+.detail span { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-bottom: 0.25rem; }
+.detail strong { font-size: 1.1rem; }
+.api-note { margin-top: 1.5rem; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+.api-note a { color: #a78bfa; }

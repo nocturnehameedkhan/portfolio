@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="todo-app">
+    <a href="../../index.html" class="back-link">← Portfolio</a>
+    <h1>✅ My Todo List</h1>
+    <div class="stats">
+      <span id="totalTasks">0 tasks</span>
+      <span id="doneTasks">0 done</span>
+    </div>
+    <div class="add-box">
+      <input type="text" id="todoInput" placeholder="Add a new task..." maxlength="100"/>
+      <button onclick="addTodo()">Add</button>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterTodos('all', this)">All</button>
+      <button class="filter-btn" onclick="filterTodos('active', this)">Active</button>
+      <button class="filter-btn" onclick="filterTodos('done', this)">Done</button>
+    </div>
+    <ul id="todoList"></ul>
+    <div class="clear-box">
+      <button onclick="clearDone()">Clear completed</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

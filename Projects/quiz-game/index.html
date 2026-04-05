@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="quiz-app">
+    <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+    <div id="start-screen" class="screen">
+      <h1>🧠 Quiz Challenge</h1>
+      <p>10 questions · General Knowledge · Beat the clock!</p>
+      <button onclick="startQuiz()" class="btn">Start Quiz</button>
+    </div>
+    <div id="quiz-screen" class="screen hidden">
+      <div class="quiz-header">
+        <div class="question-count">Question <span id="qNum">1</span>/10</div>
+        <div class="timer" id="timer">⏱ 15s</div>
+        <div class="score-live">Score: <span id="liveScore">0</span></div>
+      </div>
+      <div class="progress-bar"><div class="progress" id="progress"></div></div>
+      <div class="question-box" id="questionBox"></div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+    <div id="result-screen" class="screen hidden">
+      <div class="result-icon" id="resultIcon">🏆</div>
+      <h2>Quiz Complete!</h2>
+      <div class="final-score" id="finalScore">0/10</div>
+      <p id="resultMsg"></p>
+      <button onclick="restartQuiz()" class="btn">Play Again</button>
+      <a href="../../index.html" class="btn btn-outline">Back to Portfolio</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

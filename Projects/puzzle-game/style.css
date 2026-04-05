@@ -1,0 +1,20 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.puzzle-app { text-align: center; color: white; padding: 2rem; }
+.back-link { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; display: block; margin-bottom: 1rem; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.stats { display: flex; gap: 2rem; justify-content: center; margin-bottom: 1.25rem; font-size: 1rem; }
+.stats strong { font-size: 1.2rem; }
+.board { display: grid; grid-template-columns: repeat(4, 80px); grid-template-rows: repeat(4, 80px); gap: 6px; margin: 0 auto 1.5rem; width: fit-content; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 12px; }
+.tile { width: 80px; height: 80px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; cursor: pointer; transition: 0.15s; user-select: none; }
+.tile.number { background: white; color: #6c63ff; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.tile.number:hover { background: #ede9ff; transform: scale(0.97); }
+.tile.empty { background: rgba(255,255,255,0.1); cursor: default; }
+.tile.hint { background: #ffd700; color: #1a1a2e; animation: glow 0.6s ease; }
+@keyframes glow { 0%,100%{box-shadow:0 0 0 rgba(255,215,0,0)} 50%{box-shadow:0 0 15px rgba(255,215,0,0.8)} }
+.controls { display: flex; gap: 1rem; justify-content: center; }
+.controls button { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.9rem; cursor: pointer; transition: 0.2s; }
+.controls button:hover { background: rgba(255,255,255,0.25); }
+.win-message { margin-top: 1.25rem; background: rgba(255,255,255,0.95); color: #1a1a2e; padding: 1.25rem 2rem; border-radius: 12px; font-size: 1.1rem; font-weight: 600; }
+.win-message button { margin-left: 1rem; background: #6c63ff; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; }
+.hidden { display: none !important; }

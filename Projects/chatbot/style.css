@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #1a1a2e; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.chat-app { width: 400px; height: 600px; background: white; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+.chat-header { background: #6c63ff; color: white; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 0.75rem; }
+.back-btn { color: white; text-decoration: none; font-size: 1.1rem; opacity: 0.9; }
+.bot-avatar { font-size: 2rem; background: rgba(255,255,255,0.15); border-radius: 50%; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; }
+.bot-info strong { display: block; font-size: 0.95rem; }
+.status { font-size: 0.75rem; opacity: 0.85; }
+.chat-messages { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; background: #f8f9fc; }
+.message { display: flex; flex-direction: column; max-width: 80%; }
+.message.user { align-self: flex-end; align-items: flex-end; }
+.message.bot { align-self: flex-start; }
+.bubble { padding: 0.75rem 1rem; border-radius: 18px; font-size: 0.9rem; line-height: 1.5; }
+.bot .bubble { background: white; border: 1px solid #e2e8f0; border-bottom-left-radius: 4px; }
+.user .bubble { background: #6c63ff; color: white; border-bottom-right-radius: 4px; }
+.time { font-size: 0.7rem; color: #94a3b8; margin-top: 3px; }
+.typing .bubble { color: #94a3b8; font-style: italic; }
+.chat-input { border-top: 1px solid #e2e8f0; background: white; padding: 0.75rem 1rem; }
+.quick-replies { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.quick-replies button { background: #ede9ff; color: #6c63ff; border: none; padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; cursor: pointer; font-weight: 500; }
+.quick-replies button:hover { background: #6c63ff; color: white; }
+.input-row { display: flex; gap: 0.5rem; }
+.input-row input { flex: 1; padding: 0.65rem 1rem; border: 1px solid #e2e8f0; border-radius: 25px; font-size: 0.9rem; }
+.input-row input:focus { outline: none; border-color: #6c63ff; }
+.input-row button { background: #6c63ff; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1rem; cursor: pointer; }

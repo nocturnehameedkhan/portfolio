@@ -1,0 +1,28 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; min-height: 100vh; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; }
+.quiz-app { background: white; border-radius: 20px; padding: 2.5rem; max-width: 600px; width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; }
+.back-link { position: absolute; top: 1rem; left: 1.5rem; font-size: 0.85rem; color: #667eea; text-decoration: none; font-weight: 500; }
+.back-link:hover { text-decoration: underline; }
+.screen { text-align: center; }
+.screen h1 { font-size: 2rem; margin-bottom: 0.75rem; color: #1a1a2e; }
+.screen p { color: #64748b; margin-bottom: 2rem; }
+.hidden { display: none !important; }
+.btn { background: #667eea; color: white; border: none; padding: 0.75rem 2rem; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer; margin: 0.5rem; transition: 0.2s; }
+.btn:hover { background: #5a52d5; transform: translateY(-1px); }
+.btn-outline { background: transparent; border: 2px solid #667eea; color: #667eea; }
+.btn-outline:hover { background: #ede9ff; }
+.quiz-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 600; }
+.timer { background: #fff3cd; padding: 4px 12px; border-radius: 20px; color: #856404; }
+.timer.urgent { background: #ffe0e0; color: #c00; }
+.score-live { color: #667eea; }
+.progress-bar { height: 6px; background: #e2e8f0; border-radius: 3px; margin-bottom: 1.5rem; }
+.progress { height: 100%; background: #667eea; border-radius: 3px; transition: width 0.4s; }
+.question-box { font-size: 1.15rem; font-weight: 600; color: #1a1a2e; text-align: left; margin-bottom: 1.5rem; line-height: 1.5; background: #f8f9fc; padding: 1.25rem; border-radius: 12px; }
+.options { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem; }
+.option-btn { background: white; border: 2px solid #e2e8f0; border-radius: 10px; padding: 0.75rem; font-size: 0.95rem; cursor: pointer; text-align: left; transition: 0.2s; }
+.option-btn:hover:not(:disabled) { border-color: #667eea; background: #ede9ff; }
+.option-btn.correct { background: #d4edda; border-color: #28a745; color: #155724; }
+.option-btn.wrong { background: #f8d7da; border-color: #dc3545; color: #721c24; }
+.feedback { min-height: 24px; font-size: 0.9rem; font-weight: 500; text-align: center; }
+.result-icon { font-size: 4rem; margin-bottom: 1rem; }
+.final-score { font-size: 3rem; font-weight: 700; color: #667eea; margin: 0.5rem 0; }
