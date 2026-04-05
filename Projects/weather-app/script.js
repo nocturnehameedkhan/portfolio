@@ -1,4 +1,4 @@
-const API_KEY = ' 88040b2b5f3ddcf4d567e65791870e0b';
+const API_KEY = 'Api';
 
 const weatherIcons = {
   Clear: '☀️', Clouds: '☁️', Rain: '🌧️',
@@ -16,7 +16,7 @@ async function getWeather() {
   card.classList.add('hidden');
 
   // Demo mode if no API key
-  if (API_KEY === '88040b2b5f3ddcf4d567e65791870e0b') {
+  if (API_KEY === 'Api') {
     showDemoData(city);
     return;
   }
